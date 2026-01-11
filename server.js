@@ -22,3 +22,7 @@ mongoose
     );
   })
   .catch((err) => console.log(err));
+
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
